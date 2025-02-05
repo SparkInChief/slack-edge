@@ -713,7 +713,7 @@ export interface LinkSharedEvent extends SlackEvent<"link_shared"> {
     url: string;
   }[];
   unfurl_id?: string;
-  source?: string;
+  source?: "composer" | "conversations_history";
   event_ts: string;
 }
 
