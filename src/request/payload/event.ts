@@ -696,8 +696,8 @@ export interface LinkSharedEvent extends SlackEvent<"link_shared"> {
     domain: string;
     url: string;
   }[];
-  unfurl_id?: string;
-  source?: "composer" | "conversations_history";
+  unfurl_id: string;
+  source: "composer" | "conversations_history";
   event_ts: string;
 }
 
